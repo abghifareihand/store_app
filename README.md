@@ -85,4 +85,4 @@ Dalam pengembangan project ini, saya fokus pada detail teknis untuk meningkatkan
 
 ---
 
-Made with ❤️ by [Nama Kamu]
+Made with ❤️ by Abghi Fareihan
