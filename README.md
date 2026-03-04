@@ -30,6 +30,39 @@ A professional e-commerce mobile application built with **Flutter** following **
 
 ---
 
+---
+
+## ⚙️ Data Architecture & Flow
+
+Aplikasi ini menggunakan pendekatan **Hybrid Data Management** untuk efisiensi dan keamanan data:
+
+### 1. Remote API (Product Data)
+* **Endpoint**: Menggunakan REST API untuk mengambil daftar produk dan detail produk.
+* **Mechanism**: Data diambil secara asynchronous menggunakan `Dio`/`Http`, diparsing melalui `CartItemModel`, dan ditampilkan ke UI melalui BLoC state management.
+* **Caching**: Menggunakan `CachedNetworkImage` agar gambar produk tidak didownload berulang kali.
+
+### 2. Local Storage (User & Cart Session)
+Untuk menjaga pengalaman pengguna tetap konsisten meskipun aplikasi ditutup, sistem penyimpanan lokal diterapkan pada:
+* **Authentication**: Username dan status login disimpan di `SharedPreferences`. Aplikasi akan otomatis masuk ke Dashboard jika session masih ada.
+* **Persistent Cart**: 
+    * Setiap kali user menambah, mengurangi, atau menghapus item, Repository akan memperbarui database lokal.
+    * Saat aplikasi dibuka kembali, `LoadCart` event akan mengambil data mentah (JSON String) dari local, mengonversinya kembali menjadi list of `CartItemModel`, dan menampilkannya di keranjang.
+
+
+
+---
+
+## 🛠️ Logic Implementation Details
+
+| Feature | Source | Logic Location |
+| :--- | :--- | :--- |
+| **Product List** | Remote API | `ProductRepository` |
+| **User Session** | Local Storage | `AuthLocalDataSource` |
+| **Cart Items** | Local Storage | `CartRepositoryImpl` |
+| **Price Calculation** | Logic | `CartRepository` (Single Source of Truth) |
+
+---
+
 ## 🏗️ Architecture Layer
 
 Project ini menerapkan **3-Layer Clean Architecture** untuk memastikan kode mudah di-test, di-maintain, dan *scalable*:
