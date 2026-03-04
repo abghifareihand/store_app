@@ -10,10 +10,13 @@ A professional e-commerce mobile application built with **Flutter** following **
 
 ## 📱 App Demo
 <div align="center">
+  <h3>📱 Full Application Demo</h3>
   <kbd>
-    <img src="assets/screenshots/demo_app.gif" width="320" alt="App Demo Animation" />
+    <video src="https://github.com/abghifareihand/store_app/assets/screenshots/demo_app.mp4" width="320" controls autoplay loop muted>
+      Your browser does not support the video tag.
+    </video>
   </kbd>
-  <br>
+  <p><i>Full journey from Login to Checkout</i></p>
 </div>
 
 
