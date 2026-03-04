@@ -63,7 +63,7 @@ Project ini menerapkan **3-Layer Clean Architecture** untuk memastikan kode muda
 
 1.  **Clone the repo**
     ```bash
-    git clone [https://github.com/username/store_app.git](https://github.com/username/store_app.git)
+    git clone [https://github.com/abghifareihand/store_app.git](https://github.com/abghifareihand/store_app.git)
     ```
 2.  **Install Dependencies**
     ```bash
