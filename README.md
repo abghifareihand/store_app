@@ -10,7 +10,7 @@ A professional e-commerce mobile application built with **Flutter** following **
 
 ## 📱 Screenshots
 
-| Product List | Product Detail | Shopping Cart |
+| Login | Home | Detail Product |
 | :---: | :---: | :---: |
 | <img src="assets/screenshots/Screenshot_1.png" width="220"> | <img src="assets/screenshots/Screenshot_2.png" width="220"> | <img src="assets/screenshots/Screenshot_3.png" width="220"> |
 | **Checkout Page** | **Profile Page** | **Search / Filter** |
