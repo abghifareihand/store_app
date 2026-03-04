@@ -1,0 +1,28 @@
+part of 'cart_bloc.dart';
+
+abstract class CartState extends Equatable {
+  @override
+  List<Object?> get props => [];
+}
+
+class CartInitial extends CartState {}
+
+class CartLoading extends CartState {}
+
+class CartLoaded extends CartState {
+  final List<CartItem> items;
+  CartLoaded(this.items);
+
+  double get totalPrice => items.fold(0, (sum, item) => sum + (item.price * item.quantity));
+
+  @override
+  List<Object?> get props => [items];
+}
+
+class CartError extends CartState {
+  final String message;
+  CartError(this.message);
+
+  @override
+  List<Object?> get props => [message];
+}
