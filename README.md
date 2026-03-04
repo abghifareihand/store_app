@@ -9,7 +9,13 @@ A professional e-commerce mobile application built with **Flutter** following **
 ---
 
 ## 📱 App Demo
-<img src="assets/screenshots/demo_app.gif" width="350">
+<div align="center">
+  <kbd>
+    <img src="assets/screenshots/demo_app.gif" width="320" alt="App Demo Animation" />
+  </kbd>
+  <br>
+  <em>"Smooth transitions with Clean Architecture & BLoC state management"</em>
+</div>
 ---
 
 ## 📱 Screenshots
