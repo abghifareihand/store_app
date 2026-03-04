@@ -9,8 +9,7 @@ A professional e-commerce mobile application built with **Flutter** following **
 ---
 
 ## 📱 App Demo
-(Paste link video hasil upload kamu di sini)
-![App Demo](assets/screenshots/demo_app.gif)
+<img src="assets/screenshots/demo_app.gif" width="350">
 ---
 
 ## 📱 Screenshots
