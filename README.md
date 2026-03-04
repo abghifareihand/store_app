@@ -8,6 +8,11 @@ A professional e-commerce mobile application built with **Flutter** following **
 
 ---
 
+## 📱 App Demo
+(Paste link video hasil upload kamu di sini)
+![App Demo](assets/screenshots/demo_app.gif)
+---
+
 ## 📱 Screenshots
 
 | Login Page | Product Page | Detail Page |
@@ -15,6 +20,7 @@ A professional e-commerce mobile application built with **Flutter** following **
 | <img src="assets/screenshots/Screenshot_1.png" width="220"> | <img src="assets/screenshots/Screenshot_2.png" width="220"> | <img src="assets/screenshots/Screenshot_3.png" width="220"> |
 | **Profile Page** | **Add to Cart** | **Cart Page** |
 | <img src="assets/screenshots/Screenshot_4.png" width="220"> | <img src="assets/screenshots/Screenshot_5.png" width="220"> | <img src="assets/screenshots/Screenshot_6.png" width="220"> |
+
 
 ---
 
@@ -46,6 +52,7 @@ Untuk menjaga pengalaman pengguna tetap konsisten meskipun aplikasi ditutup, sis
     * Setiap kali user menambah, mengurangi, atau menghapus item, Repository akan memperbarui database lokal.
     * Saat aplikasi dibuka kembali, `LoadCart` event akan mengambil data mentah (JSON String) dari local, mengonversinya kembali menjadi list of `CartItemModel`, dan menampilkannya di keranjang.
 
+
 ---
 
 ## 🛠️ Logic Implementation Details
@@ -56,6 +63,7 @@ Untuk menjaga pengalaman pengguna tetap konsisten meskipun aplikasi ditutup, sis
 | **User Session** | Local Storage | `AuthLocalDataSource` |
 | **Cart Items** | Local Storage | `CartRepositoryImpl` |
 | **Price Calculation** | Logic | `CartRepository` (Single Source of Truth) |
+
 
 ---
 
@@ -75,6 +83,7 @@ Project ini menerapkan **3-Layer Clean Architecture** untuk memastikan kode muda
     * **BLoC**: Mengelola state dan jembatan antara UI dan Domain.
     * **Pages & Widgets**: Komponen UI yang reaktif terhadap state.
 
+
 ---
 
 ## 🛠️ Tech Stack & Library
@@ -85,6 +94,7 @@ Project ini menerapkan **3-Layer Clean Architecture** untuk memastikan kode muda
 * **Local Database**: `shared_preferences`
 * **Image Caching**: `cached_network_image`
 * **Icons & Assets**: `flutter_svg`
+
 
 ---
 
