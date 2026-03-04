@@ -30,8 +30,6 @@ A professional e-commerce mobile application built with **Flutter** following **
 
 ---
 
----
-
 ## ⚙️ Data Architecture & Flow
 
 Aplikasi ini menggunakan pendekatan **Hybrid Data Management** untuk efisiensi dan keamanan data:
@@ -47,8 +45,6 @@ Untuk menjaga pengalaman pengguna tetap konsisten meskipun aplikasi ditutup, sis
 * **Persistent Cart**: 
     * Setiap kali user menambah, mengurangi, atau menghapus item, Repository akan memperbarui database lokal.
     * Saat aplikasi dibuka kembali, `LoadCart` event akan mengambil data mentah (JSON String) dari local, mengonversinya kembali menjadi list of `CartItemModel`, dan menampilkannya di keranjang.
-
-
 
 ---
 
